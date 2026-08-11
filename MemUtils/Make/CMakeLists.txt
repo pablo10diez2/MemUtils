@@ -9,7 +9,8 @@ set(SRC_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../Src")
 set(INCLUDE_PATH "${SRC_PATH}/Includes" )
 
 add_library(MemUtils 
-    ${SRC_PATH}/utils.cpp
+    ${SRC_PATH}/System.cpp
+    ${SRC_PATH}/System_impl.cpp
 )
 
 target_include_directories(MemUtils
