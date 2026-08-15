@@ -8,8 +8,11 @@ class System {
     private:
         System();
             
-        System(const System&) = delete;
-        System& operator=(const System&) = delete;
+        System(const System&) = delete;                 // copy constructor deleted
+        System& operator=(const System&) = delete;      // copy assignment deleted
+                                                        
+        System(System&&);                               // move constructor added
+        System& operator=(System&&);                    // move assignment added
 
         System_impl* system_impl;
 
