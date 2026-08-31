@@ -13,8 +13,8 @@ class System_impl {
         System_impl();
         ~System_impl();
 
-        const std::vector<int>& get_cores();
-            const std::vector<int>& get_caches();
+        const std::vector<int>& get_cores() const;
+        const std::vector<int>& get_caches() const;
 };
 
 }

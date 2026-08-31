@@ -3,9 +3,7 @@
 
 namespace MemUtils { 
     
-System::System() : system_impl( new MemUtils::System_impl ) {
-
-}
+System::System() : system_impl( new MemUtils::System_impl ) {}
 
 System::System(System&& other) : system_impl( other.system_impl ) {         // move constructor
     other.system_impl = nullptr;
