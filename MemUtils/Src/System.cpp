@@ -1,9 +1,9 @@
-#include "Includes/System_impl.h"
+#include "Includes/SystemImpl.h"
 #include "Includes/System.h"
 
 namespace MemUtils { 
     
-System::System() : system_impl( std::make_unique<MemUtils::System_impl>() ) {}
+System::System() : system_impl( std::make_unique<MemUtils::SystemImpl>() ) {}
 
 const System& System::get_instance(){
     static System instance;

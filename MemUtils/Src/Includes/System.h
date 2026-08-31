@@ -3,11 +3,11 @@
 
 namespace MemUtils{
 
-class System_impl;
+class SystemImpl;
 
 class System {
     private:
-        std::unique_ptr<System_impl> system_impl;
+        std::unique_ptr<SystemImpl> system_impl;
 
         System();
 
@@ -28,5 +28,5 @@ class System {
             
         //void update_cores();
         //void update_caches();
-    };
+};
 }

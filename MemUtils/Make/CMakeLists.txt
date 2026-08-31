@@ -10,7 +10,7 @@ set(INCLUDE_PATH "${SRC_PATH}/Includes" )
 
 add_library(MemUtils 
     ${SRC_PATH}/System.cpp
-    ${SRC_PATH}/System_impl.cpp
+    ${SRC_PATH}/SystemImpl.cpp
 )
 
 target_include_directories(MemUtils

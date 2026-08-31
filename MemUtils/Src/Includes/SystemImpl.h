@@ -2,7 +2,7 @@
 
 namespace MemUtils{
     
-class System_impl {
+class SystemImpl {
     private:
         std::vector<int> cores;
         std::vector<int> caches;
@@ -10,11 +10,10 @@ class System_impl {
         void init();
     
     public:
-        System_impl();
-        ~System_impl();
+        SystemImpl();
+        ~SystemImpl();
 
         const std::vector<int>& get_cores() const;
         const std::vector<int>& get_caches() const;
 };
-
 }
