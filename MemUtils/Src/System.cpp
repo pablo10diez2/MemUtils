@@ -3,34 +3,15 @@
 
 namespace MemUtils { 
     
-System::System() : system_impl( new MemUtils::System_impl ) {}
+System::System() : system_impl( std::make_unique<MemUtils::System_impl>() ) {}
 
-System::System(System&& other) : system_impl( other.system_impl ) {         // move constructor
-    other.system_impl = nullptr;
-}
-
-System& System::operator=(System&& other){                                  // move assignment
-    if( &other == this ){
-        return *this;
-    }
-    
-    delete system_impl;
-
-    this->system_impl = other.system_impl;
-    other.system_impl = nullptr;
-
-    return *this;
-}
-    
 const System& System::get_instance(){
     static System instance;
 
     return instance;
 }
 
-System::~System(){
-    delete system_impl;
-}
+System::~System() {}
 
 const std::vector<int>& System::get_cores() const {
     return system_impl->get_cores();

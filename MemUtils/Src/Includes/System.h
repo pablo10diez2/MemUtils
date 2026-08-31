@@ -1,4 +1,5 @@
 #include <vector>
+#include <memory>
 
 namespace MemUtils{
 
@@ -6,7 +7,7 @@ class System_impl;
 
 class System {
     private:
-        System_impl* system_impl;
+        std::unique_ptr<System_impl> system_impl;
 
         System();
 
@@ -15,8 +16,8 @@ class System {
         System(const System&) = delete;                 // copy constructor deleted
         System& operator=(const System&) = delete;      // copy assignment deleted
                                                         
-        System(System&&);                               // move constructor added
-        System& operator=(System&&);                    // move assignment added
+        System(System&&) = delete;                      // move constructor deleted
+        System& operator=(System&&) = delete;           // move assignment deleted
 
         static const System& get_instance();
         
@@ -27,6 +28,5 @@ class System {
             
         //void update_cores();
         //void update_caches();
-};
-
+    };
 }
