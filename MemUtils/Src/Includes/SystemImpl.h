@@ -4,8 +4,8 @@ namespace MemUtils{
     
 class SystemImpl {
     private:
-        std::vector<int> cores;
-        std::vector<int> caches;
+        std::vector<int> m_cores;
+        std::vector<int> m_caches;
             
         void init();
     

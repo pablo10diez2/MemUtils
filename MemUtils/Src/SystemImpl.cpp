@@ -9,16 +9,16 @@ SystemImpl::SystemImpl(){
 SystemImpl::~SystemImpl() {}
 
 void SystemImpl::init(){
-    this->cores = { 1,2,3,4 };
-    this->caches = { 5,6,7,8 };
+    this->m_cores = { 1,2,3,4 };
+    this->m_caches = { 5,6,7,8 };
 }
 
 const std::vector<int>& SystemImpl::get_cores() const {
-    return this->cores;
+    return this->m_cores;
 }
 
 const std::vector<int>& SystemImpl::get_caches() const {
-    return this->caches;
+    return this->m_caches;
 }
 
 }

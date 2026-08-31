@@ -7,7 +7,7 @@ class SystemImpl;
 
 class System {
     private:
-        std::unique_ptr<SystemImpl> system_impl;
+        std::unique_ptr<SystemImpl> m_system_impl;
 
         System();
 
