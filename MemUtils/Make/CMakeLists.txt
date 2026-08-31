@@ -11,6 +11,7 @@ set(INCLUDE_PATH "${SRC_PATH}/Includes" )
 add_library(MemUtils 
     ${SRC_PATH}/System.cpp
     ${SRC_PATH}/SystemImpl.cpp
+    ${SRC_PATH}/Cache.cpp
 )
 
 target_include_directories(MemUtils
