@@ -1,3 +1,6 @@
+#ifndef CORE
+#define
+
 namespace MemUtils {
 
 class Core {
@@ -11,3 +14,5 @@ class Core {
 };
 
 }
+
+#endif

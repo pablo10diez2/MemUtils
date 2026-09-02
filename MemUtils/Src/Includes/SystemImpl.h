@@ -1,3 +1,6 @@
+#ifndef SYSTEM_IMPL
+#define SYSTEM_IMPL_
+
 #include <vector>
 
 namespace MemUtils{
@@ -20,3 +23,5 @@ class SystemImpl {
         const std::vector<Cache>& get_caches() const;
 };
 }
+
+#endif

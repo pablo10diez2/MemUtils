@@ -1,3 +1,6 @@
+#ifndef SYSTEM
+#define SYSTEM
+
 #include <vector>
 #include <memory>
 
@@ -31,3 +34,5 @@ class System {
 };
 
 }
+
+#endif

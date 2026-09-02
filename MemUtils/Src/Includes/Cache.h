@@ -1,3 +1,6 @@
+#ifndef CACHE
+#define CACHE
+
 #include <cstring>
 
 namespace MemUtils {
@@ -31,3 +34,5 @@ class Cache {
         std::size_t get_size() const; 
 };
 }
+
+#endif
