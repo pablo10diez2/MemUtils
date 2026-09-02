@@ -13,7 +13,7 @@ const System& System::get_instance(){
 
 System::~System() {}
 
-const std::vector<int>& System::get_cores() const {
+const std::vector<Core>& System::get_cores() const {
     return m_system_impl->get_cores();
 }
 
