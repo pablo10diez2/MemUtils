@@ -1,5 +1,7 @@
 #include "Includes/Cache.h"
 
+namespace MemUtils{
+
 Cache::Cache(int id, int level, Cache::Type type, std::size_t size) : m_id{id}, m_level{level}, 
     m_type(type), m_size(size) {}
 
@@ -17,4 +19,6 @@ Cache::Type Cache::get_type() const {
 
 std::size_t Cache::get_size() const {
     return m_size;
+}
+
 }

@@ -24,7 +24,7 @@ class System {
         ~System();
 
         const std::vector<int>& get_cores() const;
-        const std::vector<int>& get_caches() const;
+        const std::vector<Cache>& get_caches() const;
             
         //void update_cores();
         //void update_caches();

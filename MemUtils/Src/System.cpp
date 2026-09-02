@@ -17,7 +17,7 @@ const std::vector<int>& System::get_cores() const {
     return m_system_impl->get_cores();
 }
 
-const std::vector<int>& System::get_caches() const {
+const std::vector<Cache>& System::get_caches() const {
     return m_system_impl->get_caches();
 }
 

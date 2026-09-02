@@ -1,5 +1,7 @@
 #include <cstring>
 
+namespace MemUtils {
+
 class Cache {
     public:
         enum Type{
@@ -28,3 +30,4 @@ class Cache {
         Type get_type() const;
         std::size_t get_size() const; 
 };
+}
