@@ -21,6 +21,8 @@ void SystemImpl::init(){
     for(int i{0}; i < 2; ++i){
         m_cores.emplace_back(i);
     }
+
+
 }
 
 const std::vector<Core>& SystemImpl::get_cores() const {

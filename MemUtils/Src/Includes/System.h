@@ -7,6 +7,8 @@
 namespace MemUtils{
 
 class SystemImpl;
+class Cache;
+class Core;
 
 class System {
     private:

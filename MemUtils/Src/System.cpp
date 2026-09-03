@@ -1,5 +1,7 @@
 #include "Includes/SystemImpl.h"
 #include "Includes/System.h"
+#include "Includes/Core.h"
+#include "Includes/Cache.h"
 
 namespace MemUtils { 
     

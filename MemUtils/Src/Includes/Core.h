@@ -1,5 +1,5 @@
 #ifndef CORE
-#define
+#define CORE
 
 namespace MemUtils {
 

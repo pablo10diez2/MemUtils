@@ -2,6 +2,7 @@
 #define SYSTEM_IMPL_
 
 #include <vector>
+#include <unordered_map>
 
 namespace MemUtils{
     
@@ -12,6 +13,9 @@ class SystemImpl {
     private:
         std::vector<Core> m_cores;
         std::vector<Cache> m_caches;
+        
+        std::unordered_map<int, Core*> m_associated_cores;
+        std::unordered_map<int, Cache*> m_accessible_caches;
 
         void init();
     
