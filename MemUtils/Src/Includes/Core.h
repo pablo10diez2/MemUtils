@@ -1,6 +1,8 @@
 #ifndef CORE
 #define CORE
 
+#include <iostream>
+
 namespace MemUtils {
 
 class Core {
@@ -12,6 +14,8 @@ class Core {
 
         int get_id() const;
 };
+
+std::ostream& operator << (std::ostream& ,const Core& core);
 
 }
 

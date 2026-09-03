@@ -8,4 +8,9 @@ int Core::get_id() const {
     return m_id;
 }
 
+std::ostream& operator << (std::ostream& out, const Core& core){
+    out << "Core, id: " << core.get_id(); 
+    return out;
+}
+
 }

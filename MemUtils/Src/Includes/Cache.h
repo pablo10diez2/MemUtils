@@ -2,6 +2,7 @@
 #define CACHE
 
 #include <cstring>
+#include <iostream>
 
 namespace MemUtils {
 
@@ -33,6 +34,9 @@ class Cache {
         Type get_type() const;
         std::size_t get_size() const; 
 };
+
+std::ostream& operator << (std::ostream&, const Cache& cache);
+
 }
 
 #endif
