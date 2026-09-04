@@ -22,7 +22,7 @@ std::size_t Cache::get_size() const {
 }
 
 std::ostream& operator << (std::ostream& out, const Cache& cache){
-    out << "Cache, id: " << cache.get_id(); 
+    out << "Cache, id: " << cache.get_id() << ", level: " << cache.get_level() << ", type: " << cache.get_type() << ", size: " << cache.get_size(); 
     return out;
 }
 
