@@ -14,11 +14,9 @@ namespace MemUtils{
             std::string entry_name = dir_entry.path().stem();
             
             if( check_cpu_entry_path(entry_name) ){
-                std::cout << entry_name << "\n";
                 sum++;
             }
         }
-        
         return sum;
     }
 
