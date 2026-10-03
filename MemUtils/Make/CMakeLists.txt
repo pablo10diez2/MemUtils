@@ -13,6 +13,7 @@ add_library(MemUtils
     ${SRC_PATH}/SystemImpl.cpp
     ${SRC_PATH}/Cache.cpp
     ${SRC_PATH}/Core.cpp
+    ${SRC_PATH}/FileReader.cpp
 )
 
 target_include_directories(MemUtils
