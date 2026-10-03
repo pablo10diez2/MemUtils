@@ -14,8 +14,8 @@ class SystemImpl {
         std::vector<Core> m_cores;
         std::vector<Cache> m_caches;
         
-        std::unordered_map<int, Core*> m_associated_cores;
-        std::unordered_map<int, Cache*> m_accessible_caches;
+        std::unordered_map<int, Core*> m_cache_associated_cores;
+        std::unordered_map<int, Cache*> m_core_accessible_caches;
 
         void init();
     
